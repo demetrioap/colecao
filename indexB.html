@@ -12,7 +12,9 @@
 
 <body>
     <header>
-        <h1>Coleção de Itens</h1>
+        <h1>Minha Coleção</h1>
+        <br>
+        <p><strong>Aqui você pode adicionar e pesquisar action-figures, livros, filmes, jogos e o que mais quiser!</strong></p>
     </header>
 
     <main>
@@ -20,32 +22,36 @@
         <section id="add-item">
             <h2>Adicionar Novo Item</h2>
             <!-- Campo de entrada para o nome do item -->
-            <input type="text" id="item-name" placeholder="Nome" required>
+            <input type="text" id="item-name" placeholder="Digite o nome do item" required>
             <!-- Campo de entrada para a URL da imagem do item -->
-            <input type="url" id="item-url" placeholder="URL da Imagem" required>
+            <input type="url" id="item-url" placeholder="Cole o link da Imagem" required>
             <!-- Botão para adicionar o item -->
-            <button id="add-button">Adicionar Item</button>
+            <button id="add-button">Adicionar</button>
         </section>
 
         <!-- Seção para buscar itens -->
         <section id="search-item">
-            <h2>Buscar Itens</h2>
-            <!-- Campo de entrada para o termo de busca -->
-            <input type="text" id="search-input" placeholder="Buscar por nome">
-            <!-- Botão para iniciar a busca -->
-            <button id="search-button">Buscar</button>
-        </section>
-
-        <!-- Seção para exibir a lista de itens -->
-        <section id="item-list">
-            <h2>Itens</h2>
-            <!-- Container para exibir os itens -->
-            <div id="items-container"></div>
+            <h2>Buscar Item</h2>
+            <div class="search-container"></div>
+                <!-- Campo de entrada para o termo de busca -->
+                <input type="text" id="search-input" placeholder="Buscar por nome">
+                <!-- Botão para iniciar a busca -->
+                <button id="search-button">></button>
+            </div>
         </section>
     </main>
 
+    <!-- Seção para exibir a lista de itens -->
+    <section id="item-list">
+        <h2>Itens Registrados / Resultado Busca</h2>
+        <!-- Container para exibir os itens -->
+        <div id="items-container"></div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Demetrio de Paula - Coleção</p>
+        <p>&copy; 2024 Demetrio de Paula - Minha Coleção</p>
+        <a href="https://github.com/demetrioap" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/demetrioap/" target="_blank">LinkedIn</a>
     </footer>
 
     <!-- Link para o arquivo JavaScript externo -->

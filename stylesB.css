@@ -1,39 +1,75 @@
-/* Importa a fonte Roboto do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* Importa fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+:root {
+    /* --blue-400: #1fcbdf;
+    --blue-500: #0396A6; */
+    --color1: #ffc400;
+    --color2: #ff9100;
+}   
 
 body {
-    font-family: 'Roboto', sans-serif; /* Define a fonte da página */
-    line-height: 1.6; /* Define a altura da linha */
+    font-family: 'Nunito', sans-serif; /* Define a fonte da página */
+    line-height: 0; /* Define a altura da linha */
     color: #333; /* Cor do texto */
     max-width: 800px; /* Largura máxima da página */
     margin: 0 auto; /* Centraliza a página */
-    padding: 20px; /* Espaçamento interno */
+    padding: 0px; /* Espaçamento interno */
     background-color: #f4f4f4; /* Cor de fundo da página */
+    /* border: 1px solid; */
+    background: linear-gradient(90deg, var(--color2), var(--color1));
 }
 
 header {
-    background-color: #3498db; /* Cor de fundo do cabeçalho */
     color: white; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
+    text-align: left; /* Alinha o texto ao centro */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 2rem; /* Espaçamento abaixo do cabeçalho */
+    width: 100%;
+}
+
+main {
+    display: grid   ;
+    align-items: left;
+    justify-content: left;
+    gap: 1rem;
+    width: 100%;
+    height: calc(100% - 8.8rem);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#search-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#search-button {
+    width: auto;
+    padding: 10px 15px;
 }
 
 h1, h2 {
     margin-bottom: 1rem; /* Espaçamento abaixo dos títulos */
+    color: white;
 }
 
 input, button {
-    display: block; /* Exibe como bloco */
-    width: 100%; /* Largura total */
-    padding: 10px; /* Espaçamento interno */
-    margin-bottom: 10px; /* Espaçamento abaixo */
-    border: 1px solid #ddd; /* Borda leve */
-    border-radius: 4px; /* Bordas arredondadas */
+    display: inline-block; /* Changed from block to inline-block */
+    width: auto; /* Changed from 90% to auto */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 button {
-    background-color: #3498db; /* Cor de fundo do botão */
+    background-color: #00416c; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     border: none; /* Remove a borda padrão */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
@@ -54,7 +90,7 @@ button:hover {
 .item {
     background-color: white; /* Cor de fundo dos itens */
     border: 1px solid #ddd; /* Borda leve */
-    border-radius: 4px; /* Bordas arredondadas */
+    border-radius: 6px; /* Bordas arredondadas */
     padding: 10px; /* Espaçamento interno */
     text-align: center; /* Alinha o texto ao centro */
 }
@@ -66,9 +102,11 @@ button:hover {
 }
 
 footer {
-    text-align: center; /* Alinha o texto ao centro */
+    text-align: left; /* Alinha o texto ao centro */
     margin-top: 2rem; /* Espaçamento acima do rodapé */
     padding: 1rem; /* Espaçamento interno */
-    background-color: #3498db; /* Cor de fundo do rodapé */
+    /* background-color: #e3e3e3; /* Cor de fundo do rodapé */
     color: white; /* Cor do texto do rodapé */
+    font-family: "Helvetica";
+    font-size: 18px;
 }
