@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Garante a renderização adequada e o zoom de toque para todos os dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleção de Itens</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="stylesB.css">
+</head>
+
+<body>
+    <header>
+        <h1>Coleção de Itens</h1>
+    </header>
+
+    <main>
+        <!-- Seção para adicionar novos itens -->
+        <section id="add-item">
+            <h2>Adicionar Novo Item</h2>
+            <!-- Campo de entrada para o nome do item -->
+            <input type="text" id="item-name" placeholder="Nome" required>
+            <!-- Campo de entrada para a URL da imagem do item -->
+            <input type="url" id="item-url" placeholder="URL da Imagem" required>
+            <!-- Botão para adicionar o item -->
+            <button id="add-button">Adicionar Item</button>
+        </section>
+
+        <!-- Seção para buscar itens -->
+        <section id="search-item">
+            <h2>Buscar Itens</h2>
+            <!-- Campo de entrada para o termo de busca -->
+            <input type="text" id="search-input" placeholder="Buscar por nome">
+            <!-- Botão para iniciar a busca -->
+            <button id="search-button">Buscar</button>
+        </section>
+
+        <!-- Seção para exibir a lista de itens -->
+        <section id="item-list">
+            <h2>Itens</h2>
+            <!-- Container para exibir os itens -->
+            <div id="items-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Demetrio de Paula - Coleção</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte da página */
+    line-height: 1.6; /* Define a altura da linha */
+    color: #333; /* Cor do texto */
+    max-width: 800px; /* Largura máxima da página */
+    margin: 0 auto; /* Centraliza a página */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+}
+
+header {
+    background-color: #3498db; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 2rem; /* Espaçamento abaixo do cabeçalho */
+}
+
+h1, h2 {
+    margin-bottom: 1rem; /* Espaçamento abaixo dos títulos */
+}
+
+input, button {
+    display: block; /* Exibe como bloco */
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento abaixo */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+button {
+    background-color: #3498db; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+button:hover {
+    background-color: #2980b9; /* Muda a cor de fundo ao passar o mouse */
+}
+
+#items-container {
+    display: grid; /* Usa grid para layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define colunas responsivas */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px; /* Espaçamento acima do container */
+}
+
+.item {
+    background-color: white; /* Cor de fundo dos itens */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.item img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+footer {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 2rem; /* Espaçamento acima do rodapé */
+    padding: 1rem; /* Espaçamento interno */
+    background-color: #3498db; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+}
