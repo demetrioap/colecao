@@ -57,8 +57,11 @@
     <!-- Link para o arquivo JavaScript externo -->
     <script src="scriptB.js"></script>
     
-    <!-- Script para Analytics do Vercel -->
-    <script defer src="https://vercel.live/_vercel/insights/script.js"></script>
+    <!-- Scripts para Analytics do Vercel -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </body>
 
 </html>
